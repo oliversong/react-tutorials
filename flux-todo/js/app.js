@@ -1,10 +1,8 @@
 /** @jsx React.DOM */
 var React = require('react');
+var TodoApp = require('./components/TodoApp.react');
 
-var MyComponent = React.createClass({
-  render: function() {
-    return <span className="MyComponent">Hello, MyComponent!</span>;
-  }
-});
-
-module.exports = MyComponent;
+React.render(
+  <TodoApp />,
+  document.getElementById('todoapp')
+);
